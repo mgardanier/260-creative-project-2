@@ -1,0 +1,257 @@
+html {
+  background-color: #50647F;
+  font-family: "Sans-serif", "Arial";
+}
+.container {
+  display: grid;
+
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+      "navBar navBar"
+      "main leaderboard"
+      "footer footer";
+
+  grid-gap: 50px;
+}
+
+.navBar {
+  grid-area: navBar;
+  padding-left: 55px;
+  font-size: 20px;
+}
+
+.leaderboard {
+    grid-area: leaderboard;
+    margin-right: 50px;
+}
+
+.main {
+  grid-area: main;
+  margin-left: 50px;
+}
+
+.navBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px 50px 0px;
+}
+
+.navBar li {
+  padding-right: 20px;
+  display: inline;
+  float: left;
+}
+
+.navBar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navBar a:hover {
+  color: #767A7F;
+}
+
+.footer {
+  padding: 50px;
+}
+
+.footer a {
+  text-decoration: none;
+  color:black;
+}
+.footer a:hover {
+  color: #767A7F;
+}
+
+/* Main Page */
+
+.main h1 {
+  text-align: center;
+}
+
+.main p {
+  color: #ECF4FF;
+}
+
+article {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.main img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.introText {
+  margin-top: 25px;
+  column-count: 2;
+  column-gap: 30px;
+  column-rule-style: solid;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.introHead {
+  column-span: all;
+  line-height: 2;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Leaderboard */
+
+.leaderboard {
+  background-color: #ECF4FF;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.leaderTitle {
+  display: flex;
+  padding-left: 30px;
+}
+
+.leaderTitle i {
+  padding-left: 20px;
+}
+
+.leaderboard ol {
+  text-align: left;
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* Profile Page */
+
+.profileImg img {
+  width: 300px;
+  height: 250px;
+}
+
+.profileSec {
+  display: block;
+}
+
+.profileSec {
+  margin-left: 50px;
+}
+
+.profileSec aside {
+  float: left;
+  margin-right: 100px;
+}
+
+.profileSec article{
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.lookup {
+  float: right;
+}
+
+.lookup input[type=submit] {
+  background-color: silver;
+  padding: 5px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+.lookup input[type=submit]:hover {
+  border-style: solid;
+  border-color: black;
+  background-color: darkgrey;
+}
+
+.main h2 {
+  text-align: center;
+}
+
+/* Register Page */
+
+.form {
+  border-radius: 10px;
+  background-color: #767A7F;
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.form input[type=text] {
+  width: 100%;
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #50647F;
+}
+
+.regDirect {
+  margin-left: 105px;
+}
+
+.form input[type=submit] {
+  background-color: silver;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 8px;
+  padding: 14px 20px;
+}
+
+.buttonHolder {
+  text-align: center;
+}
+
+.form input[type=submit]:hover {
+  border-style: solid;
+  border-color: black;
+  background-color: darkgrey;
+}
+
+/* Scoreboard */
+
+.gameParent {
+  display: grid;
+  grid-gap: 50px;
+  background-color: #BDC4CC;
+  border-radius: 25px;
+  grid-template-columns: auto auto;
+  padding: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  /*grid-template-areas:
+    'header header'
+    'main main'
+    'footer footer'*/
+}
+
+.gameChild {
+  background-color: #767A7F;
+  border-radius: 15px;
+  max-width: 300px;
+  padding: 20px;
+  /*grid-area: main;*/
+}
+
+.gameHeader {
+  /*grid-area: header;*/
+}
+
+.gameFooter {
+  /*grid-area: footer;*/
+  text-align: center;
+}

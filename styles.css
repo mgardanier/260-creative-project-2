@@ -159,7 +159,7 @@ article {
   float: right;
 }
 
-.lookup input[type=submit] {
+.lookup input[type=submit], #CODForm input[type=submit] {
   background-color: silver;
   padding: 5px;
   width: 100px;
@@ -168,7 +168,7 @@ article {
 }
 
 
-.lookup input[type=submit]:hover {
+.lookup input[type=submit]:hover, #CODForm input[type=submit]:hover {
   border-style: solid;
   border-color: black;
   background-color: darkgrey;
@@ -180,7 +180,7 @@ article {
 
 /* Register Page */
 
-.form {
+.form, #CODForm {
   border-radius: 10px;
   background-color: #767A7F;
   padding: 20px;
@@ -188,7 +188,7 @@ article {
   margin-right: 100px;
 }
 
-.form input[type=text] {
+.form input[type=text], #CODForm input[type=text] {
   width: 100%;
   display: inline-block;
   padding: 12px 20px;
@@ -254,4 +254,22 @@ article {
 .gameFooter {
   /*grid-area: footer;*/
   text-align: center;
+}
+
+
+/* music search */
+#CODForm input[type=text] {
+  width: 50%;
+}
+
+#musicSearchResults {
+  display: block;
+  margin: 50px;
+  float: left;
+  background-color: #BDC4CC;
+  border-radius: 25px;
+  display: inline-block;
+  margin-right: auto;
+  padding-left: 10px;
+  margin-left: 100px;
 }
